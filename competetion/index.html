@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>competetion</title>
+  <link rel="stylesheet" href="../bootstrape/bootstrap file/bootstrap-5.3.0-alpha1-dist/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header-para">
+    <p class="container-fluid"><a href="#">WE ARE DELIVERING IN SELECTIVE CITIES WITHIN 10KM RADIUS FROM OUR SHOPS</a>
+    </p>
+  </div>
+  <div class="container">
+    <h1><img src="images/logo.png" alt="logo" class="logo-sabroso"></h1>
+
+
+    <a href="" class="number-1"><img src="images/call-icon.png" alt="call-icon" class="call-icon">042 111 722 477</a>
+    <a href="" class="number-2"><img src="images/mail-icon.png" alt="mail-icon"
+        class="mail-icon">INFO@SABROSO.COM.PK</a>
+    <a href="" class="number-3"><img src="images/location-icon.png" alt="location-icon" class="location-icon">Store
+      locator</a>
+    <a href="" class="number-4"><img src="images/login-icon.png" alt="login-icon" class="login-icon">Sign in/
+      Register</a>
+
+  </div>
+  <div class="nav-bar">
+    <nav id='menu'>
+      <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+      <ul>
+        <li><a class='dropdown-arrow' href='http://'>VALUE ADDED RANGE</a>
+          <ul class='sub-menus'>
+            <li><a href=''>FULLY COOKED</a></li>
+            <li><a href=''>READY TO COOK</a></li>
+          </ul>
+        </li>
+        <li><a href='#'>PARATHA RANGE</a></li>
+        <li><a class='dropdown-arrow' href='http://'>ROW CHICKEN</a>
+          <ul class='sub-menus'>
+            <li><a href='#'>FROZEN CHICKEN</a></li>
+          </ul>
+        </li>
+        <li><a href='http://'>PSL DEAL</a></li>
+      </ul>
+    </nav>
+
+    <div class="w3-content w3-section" style="max-width:500px">
+      <img class="mySlides w3-animate-top" src="images/ads-01.jpg">
+      <img class="mySlides w3-animate-bottom" src="images/ads-02.jpg">
+      <img class="mySlides w3-animate-top" src="images/ads-03.jpg">
+      <img class="mySlides w3-animate-bottom" src="images/ads-04.jpg">
+      <img class="mySlides w3-animate-top" src="images/ads-05.jpg">
+      <img class="mySlides w3-animate-bottom" src="images/ads-06.jpg">
+
+    </div>
+
+
+  </div>
+  <div>
+    <h2 class="product-h2">FEATURED PRODUCTS</h2>
+    <div class="product-image">
+      <div class="card-01">
+        <img src="images/tikka.png" alt="tikka-image" class="tikka-image">
+        <h2>Naggits</h2>
+        <button class="pkr-button">RS 1000PKR</button>
+        <button class="ADD-button">ADD TO CART</button>
+      </div>
+
+      <div class="card-02">
+        <img src="images/burger.png" alt="burger-image" class="burger-image">
+        <h2>Burger</h2>
+        <button class="pkr-button-second">RS 1000PKR</button>
+        <button class="ADD-button">ADD TO CART</button>
+      </div>
+
+      <div class="card-03">
+        <img src="images/naggits.png" alt="naggits-image" class="naggits-image">
+        <h2>Tikka</h2>
+        <button class="pkr-button-third">RS 1000PKR</button>
+        <button class="ADD-button">ADD TO CART</button>
+      </div>
+    </div>
+
+    <div class="vedio-div">
+      <iframe src="https://www.youtube.com/embed/nZ_8CK-uWa4" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen class="vedio"></iframe></iframe>
+    </div>
+  </div>
+
+  <div class="footer">
+    <img src="images/facebook-icon.png" alt="facebook-icon" class="facebook-icon">
+    <img src="images/insta-icon.png" alt="insta-icon" class="insta-icon">
+    <img src="images/youtube-icon2.png" alt="youtube-icon" class="youtube-icon">
+
+  </div>
+  <div class="link-last">
+
+    <a href="" class="about-us">About Us</a>
+    <a href="" class="Contact-Us">Contact Us</a>
+    <a href="" class="Location">Location</a>
+    <a href="" class="Term-condition">Term & condition</a>
+  </div>
+  <div class="link-last2">
+
+    <a href="" class="Privacy-Policy">Privacy Policy</a>
+
+  </div>
+  <p class="last-para">© 2023 Sabroso Pakistan. All rights reserved. </p>
+
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2500);
+    }
+  </script>
+</body>
+
+</html>
